@@ -1,0 +1,29 @@
+/*:root {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+*/
+
+/* palette colors */
+
+/*
+medium turquoise 117, 221, 221
+lemon yellow crayola 246, 254, 170
+black 0, 0, 0
+*/
+
+/* Header */
+
+/* Navigation */
+
+/* Body */
+
+body {
+    background-color: rgb(117, 221, 221);
+    font-family: Helvetica, Arial, sans-serif;
+}
