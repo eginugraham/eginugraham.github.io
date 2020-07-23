@@ -1,3 +1,5 @@
+/* -- Basic Rules -- */
+
 :root {
     box-sizing: border-box;
 }
@@ -8,6 +10,52 @@
     box-sizing: inherit;
 }
 
+nav {
+    font-size: 1.25rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+body {
+    margin: 0;
+    font-size: 1rem;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+/* -- Dynamic Rules -- */
+
+@media only screen and (min-width: 400px) {
+    img {
+        max-width: 350px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    img {
+        min-width: 200px;
+    }
+}
+
+/* -- Modules Section Rules -- */
+
+.link-normal {
+    text-decoration: none;
+}
+
+.tile {
+    display: block;
+    clear: both;
+}
 
 /* palette colors */
 
@@ -17,12 +65,3 @@ lemon yellow crayola 246, 254, 170
 black 0, 0, 0
 */
 
-/* Header */
-
-/* Navigation */
-
-/* Body */
-
-body {
-    font-family: Helvetica, Arial, sans-serif;
-}
