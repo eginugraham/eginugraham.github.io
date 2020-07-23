@@ -11,6 +11,7 @@
 }
 
 nav {
+    display: block;
     font-size: 1.25rem;
 }
 
@@ -18,12 +19,11 @@ ul {
     list-style-type: none;
 }
 
-h1 {
-    font-size: 2rem;
+li {
+    margin: 0 1em;
 }
 
 body {
-    margin: 0;
     font-size: 1rem;
     font-family: Helvetica, Arial, sans-serif;
 }
@@ -32,29 +32,73 @@ img {
     width: 100%;
 }
 
+section {
+    display: flex;
+}
+
+article {
+    padding: 1em;
+}
+/* -- Fix -- */
+/*
+Based on normalize.css
+https://necolas.github.io/normalize.css
+*/
+
+body {
+    margin: 0;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    display: none;
+}
+
+main {
+    display: block;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
 /* -- Dynamic Rules -- */
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 600px) {
     img {
         max-width: 350px;
     }
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 599px) {
     img {
         min-width: 200px;
+    }
+    section {
+        flex-direction: column;
     }
 }
 
 /* -- Modules Section Rules -- */
 
+.main-menu {
+    display: block;
+}
+
 .link-normal {
     text-decoration: none;
 }
 
+.neutral-link {
+    color: black;
+}
+
 .tile {
-    display: block;
-    clear: both;
+    background-color: rgba(0,0,0,0.2);    
 }
 
 /* palette colors */
